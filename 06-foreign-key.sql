@@ -1,0 +1,10 @@
+-- Column Syntax
+-- CREATE TABLE tb_name (
+--     reference_id INT REFERENCES reference_tab (reference_col) ON EVENT [DELETE|UPDATE] ACTIONS [CASCADE/SET NULL/SET DEFAULT/RESTRICT/NO ACTION(default)]
+-- )
+-- ACTIONS
+-- RESTRICT prevent the intended action
+-- CASCADE perform the same action on the row with the foreign key
+-- SET NULL  set the foreign key value to NULL if the related row was deleted
+-- SET DEFAULT  set the foreign key value to its DEFAULT value if the related row was deleted
+-- NO ACTION  prevent the intended action (can be ignored e.g as part of transaction)
